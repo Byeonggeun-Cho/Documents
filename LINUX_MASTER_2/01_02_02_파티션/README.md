@@ -34,5 +34,20 @@
 2. 디스크와 장치명
 
 3. 파일 시스템
+ - 파일을 저장/사용하는 규칙
 
 4. LVM(Logical Volume Manager)
+ - 여러 하드디스크를 하나의 파일 시스템으로 사용 = 용량 증대
+ - 서버운영 & 대용량 별도 저장 공간 시 활용
+
+5. RAID(Redundant Array of Independent Disks)
+ - 여러 물리적 디스크를 하나의 논리적 디스크로 인식 = 안정성 증대
+ - 여러 하드디스크에 일부 중복된 데이터를 나눠 저장
+  - H/W RAID
+  - S/W RAID
+ - 레벨(Level)에 따라 저장 방식 나뉨
+  - RAID 0(Stripe): 연속된 데이터를 여러개로 나누어 저장
+  - RAID 1(Mirroring): 동일한 내용을 두 공간에 저장
+
+6. 파티션 분할
+ - fdisk 명령어로 수행
